@@ -11,6 +11,12 @@ npm run dev
 
 Create a production build with `npm run build`.
 
+## Vercel deployment
+
+Import the repository root (the folder containing `package.json`, `src/`, and `vite.config.ts`) as the Vercel project root. The included `vercel.json` uses the Vite framework, runs `npm run build`, and serves the generated `dist` directory. Do not set `src` or another subfolder as the Vercel Root Directory.
+
+If Vercel reports `TS18003: No inputs were found` for `tsconfig.app.json`, the deployed commit does not contain the `src/` directory or Vercel is connected to the wrong repository/root. Push the complete project commit and redeploy with the correct repository and root directory.
+
 ## Testing
 
 This project uses **Vitest** because it integrates directly with Vite and provides a fast, TypeScript-friendly test runner. **React Testing Library** tests the dashboard through the same accessible interface a user sees, rather than relying on component internals. `@testing-library/user-event` drives realistic typing, clicking, and selection interactions, while `@testing-library/jest-dom` provides readable DOM assertions.
