@@ -48,3 +48,15 @@ src/
   App.test.tsx
   types.ts
 ```
+
+## Skills demonstrated
+
+- React, TypeScript, and Vite.
+- Accessible dashboard navigation, KPI presentation, search, and status filtering.
+- Form validation and loading, error, and empty UI states.
+- Vitest, React Testing Library, user-event, and V8 coverage.
+- TypeScript production builds and Vercel deployment configuration.
+
+## Repository
+
+- Source code: https://github.com/ADAMDEV01/northstar-dashboard
